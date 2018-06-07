@@ -2,4 +2,37 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url(./images/STL_BG2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.card{
+  width: 20em;
+  height: 25em;
+  background-color: #FFF;
+  margin-top: 7em;
+  margin-left: 1em;
+  background-image: linear-gradient(to bottom, #68235F, #68235F, 8em, transparent 8em, transparent 101%);
+}
+
+.profileImage{
+  height: 10em;
+  width: 10em;
+  /*padding-top: 5em;*/
+  margin-top: 3em;
+  margin-left: 5em;
+  border-radius: 50%;
+}
+
+.userInfo{
+  text-align: center;
+  margin-top: .5em;
+}
+
+.primaryUserInfo{
+  font-size: 2em;
+}
+
+.secondaryUserInfo{
+  font-size: 1em;
 }
