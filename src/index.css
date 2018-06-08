@@ -1,4 +1,4 @@
-body {
+body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -6,13 +6,27 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+.test{
+  
+}
+
+i{
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  }
+
+i:hover{
+  color: #64C2EC;
+}
 .card{
   width: 20em;
-  height: 25em;
+  height: 30em;
   background-color: #FFF;
   margin-top: 7em;
-  margin-left: 1em;
-  background-image: linear-gradient(to bottom, #68235F, #68235F, 8em, transparent 8em, transparent 101%);
+  /* margin-left: 1em; */
+  background-image: linear-gradient(to bottom, #64C2EC, #64C2EC, 8em, transparent 8em, transparent 100%);
 }
 
 .profileImage{
@@ -21,12 +35,8 @@ body {
   /*padding-top: 5em;*/
   margin-top: 3em;
   margin-left: 5em;
+  border: 6px solid white;
   border-radius: 50%;
-}
-
-.userInfo{
-  text-align: center;
-  margin-top: .5em;
 }
 
 .primaryUserInfo{
@@ -36,3 +46,9 @@ body {
 .secondaryUserInfo{
   font-size: 1em;
 }
+
+.userInfo{
+  text-align: center;
+  margin-top: .5em;
+}
+

@@ -8,9 +8,13 @@ const UserInfo = (props) => {
                     <div>
                         <span className='primaryUserInfo'>{props.name}</span>
                     </div>
-                        <span className='secondaryUserInfo'>{props.login}</span>
+                        <span className='secondaryUserInfo'>{'@' + props.login}</span>
                 </div> :
-                        <span className='primaryUserInfo'>{props.login}</span>
+                <div>
+                    <span className='primaryUserInfo'>{'@' + props.login}</span>
+                    <br/>
+                    <br/>
+                </div>
             } </div>
         )
 }

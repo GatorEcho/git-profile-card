@@ -5,7 +5,7 @@ import Card from './components/Card.js';
 class App extends Component {
   render() {
     return (
-      <div className='container'>
+      <div className='container-fluid'>
         
           <Card />
       
