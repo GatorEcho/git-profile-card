@@ -32,7 +32,6 @@ export const GIT_PROFILES = [
       "created_at": "2015-07-10T03:05:01Z",
       "updated_at": "2018-06-06T13:05:10Z"
   },
-
   {
     "login": "ellablac",
     "id": 12832281,
@@ -66,7 +65,6 @@ export const GIT_PROFILES = [
     "created_at": "2015-06-10T15:33:26Z",
     "updated_at": "2018-05-08T05:00:16Z"
   },
-
   {
     "login": "michael-lang",
     "id": 326012,
@@ -133,7 +131,6 @@ export const GIT_PROFILES = [
     "created_at": "2017-03-05T18:45:14Z",
     "updated_at": "2018-05-24T17:15:09Z"
   },
-
   {
     "login": "Samibanley",
     "id": 25395859,
@@ -199,5 +196,38 @@ export const GIT_PROFILES = [
     "following": 4,
     "created_at": "2013-12-16T16:56:32Z",
     "updated_at": "2018-05-11T16:16:40Z"
+  },
+  {
+    "login": "vivianmaxine",
+    "id": 19582376,
+    "node_id": "MDQ6VXNlcjE5NTgyMzc2",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/19582376?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vivianmaxine",
+    "html_url": "https://github.com/vivianmaxine",
+    "followers_url": "https://api.github.com/users/vivianmaxine/followers",
+    "following_url": "https://api.github.com/users/vivianmaxine/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vivianmaxine/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vivianmaxine/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vivianmaxine/subscriptions",
+    "organizations_url": "https://api.github.com/users/vivianmaxine/orgs",
+    "repos_url": "https://api.github.com/users/vivianmaxine/repos",
+    "events_url": "https://api.github.com/users/vivianmaxine/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vivianmaxine/received_events",
+    "type": "User",
+    "site_admin": false,
+    "name": "Vivian",
+    "company": null,
+    "blog": "",
+    "location": "St. Louis, MO",
+    "email": null,
+    "hireable": null,
+    "bio": "Career changer:\r\nEd --> WebDev",
+    "public_repos": 2,
+    "public_gists": 0,
+    "followers": 3,
+    "following": 1,
+    "created_at": "2016-05-26T02:36:00Z",
+    "updated_at": "2018-05-26T00:26:29Z"
   }
 ]

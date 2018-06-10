@@ -1,32 +1,40 @@
+a{
+  color: inherit;
+}
+
 body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url(./images/STL_BG2.jpg);
+  background-color: darkslategray;
+  /* background-image: url(./images/STL_BG2.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
-.test{
-  
-}
-
-i{
-  text-align: center;
-  font-size: 2em;
-  cursor: pointer;
-  }
-
-i:hover{
-  color: #64C2EC;
-}
 .card{
   width: 20em;
   height: 30em;
   background-color: #FFF;
-  margin-top: 7em;
+  margin-top: 2em;
   /* margin-left: 1em; */
-  background-image: linear-gradient(to bottom, #64C2EC, #64C2EC, 8em, transparent 8em, transparent 100%);
+  background-image: linear-gradient(to bottom, #64C2EC, #64C2EC, 7.8em, transparent 8em, transparent 100%);
+}
+
+.infoIcon{
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  cursor: pointer;
+  color: #06D6A0;
+  }
+
+.infoIcon:hover{
+  color: #048A81;
+}
+
+.panelText{
+  text-align: center;
 }
 
 .profileImage{
@@ -47,8 +55,24 @@ i:hover{
   font-size: 1em;
 }
 
+.smallText{
+  margin-top: 0.4em;
+  font-size: 0.8em;
+  text-align: center;
+  font-family: cursive;
+}
+
+.staticIcon{
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  }
+
+.staticIcon:hover{
+  color: #64C2EC;
+}
+
 .userInfo{
   text-align: center;
   margin-top: .5em;
 }
-
