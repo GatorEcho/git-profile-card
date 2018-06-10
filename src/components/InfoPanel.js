@@ -21,7 +21,7 @@ renderInfoPanel = (user) => {
                 <GitPanel repos={this.props.repos}
                           reposURL={'http://github.com/' + this.props.login + '?tab=repositories'}
                           gists={this.props.gists}
-                          gistsURL={this.props.gists_url}
+                          gistsURL={'http://gist.github.com/' + this.props.login}
                 />
             )      
         default:
@@ -49,8 +49,10 @@ selectInfoPanel = (info) =>{
                                 <a  href={this.props.url} target="_blank"><i className='fab fa-git staticIcon col'
                                                                        onMouseEnter={(info => this.selectInfoPanel('git'))}
                                                                        onTouchStart={(info => this.selectInfoPanel('git'))}
-                                                                       onMouseLeave={(info => this.selectInfoPanel('bio'))}></i></a>
-                                <i className='fas fa-envelope staticIcon col'></i>
+                                                                       /*onMouseLeave={(info => this.selectInfoPanel('bio'))}*/></i></a>
+                                <i className='fas fa-envelope staticIcon col'
+                                onMouseEnter={(info => this.selectInfoPanel('bio'))}
+                                onTouchStart={(info => this.selectInfoPanel('bio'))}></i>
                                 <i className='fab fa-free-code-camp staticIcon col'></i>
                                 <i className='fab fa-twitter staticIcon col'></i>
                                 <i className='fab fa-codepen staticIcon col'></i>

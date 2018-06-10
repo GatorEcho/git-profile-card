@@ -10,7 +10,7 @@ const GitPanel = (props) => {
                     <div className='smallText'>{props.repos} public repos</div>
                 </div>
                 <div className='col'>
-                    <a  href={props.reposURL} target="_blank"><i className='fas fa-code-branch infoIcon' ></i></a>
+                    <a  href={props.gistsURL} target="_blank"><i className='fas fa-code-branch infoIcon' ></i></a>
                     <div className='smallText'>{props.gists} public gists</div>
                 </div>
             </div>
