@@ -21,7 +21,28 @@ body{
   background-image: linear-gradient(to bottom, #64C2EC, #64C2EC, 7.8em, transparent 8em, transparent 100%);
 }
 
-.infoIcon{
+.codeIcon{
+  margin-top: -0.3em;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  color: #06D6A0;
+  }
+
+.codeIcon:hover{
+  color: #048A81;
+}
+
+.codeSmallText{
+  margin-top: 0.4em;
+  margin-bottom: 1.05em;
+  font-size: 0.8em;
+  text-align: center;
+  font-family: cursive;
+}
+
+.gitIcon{
   margin-top: .3em;
   display: block;
   text-align: center;
@@ -30,8 +51,13 @@ body{
   color: #06D6A0;
   }
 
-.infoIcon:hover{
+.gitIcon:hover{
   color: #048A81;
+}
+
+.infoContainer{
+  min-height: 120.3px;
+  max-height: 120.3px;
 }
 
 .panelText{

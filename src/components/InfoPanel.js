@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BioPanel from './BioPanel';
 import GitPanel from './GitPanel';
-import EmailPanel from './EmailPanel';
+import CodePanel from './CodePanel';
 import FCCPanel from './FCCPanel';
 
 class InfoPanel extends Component{
@@ -26,9 +26,9 @@ renderInfoPanel = (user) => {
                           gistsURL={'http://gist.github.com/' + this.props.login}
                 />
             )
-        case 'email':
+        case 'code':
             return (
-                <EmailPanel login={this.props.login}
+                <CodePanel languages={this.props.languages}
                 />
             )
         case 'fcc':
@@ -62,9 +62,9 @@ selectInfoPanel = (info) =>{
                                                                        onMouseEnter={(info => this.selectInfoPanel('git'))}
                                                                        onTouchStart={(info => this.selectInfoPanel('git'))}
                                                                        /*onMouseLeave={(info => this.selectInfoPanel('bio'))}*/></i></a>
-                                <i className='fas fa-envelope staticIcon col'
-                                onMouseEnter={(info => this.selectInfoPanel('email'))}
-                                onTouchStart={(info => this.selectInfoPanel('email'))}></i>
+                                <i className='fas fa-code staticIcon col'
+                                onMouseEnter={(info => this.selectInfoPanel('code'))}
+                                onTouchStart={(info => this.selectInfoPanel('code'))}></i>
                                 <i className='fab fa-free-code-camp staticIcon col'
                                  onMouseEnter={(info => this.selectInfoPanel('fcc'))}
                                  onTouchStart={(info => this.selectInfoPanel('fcc'))}></i>

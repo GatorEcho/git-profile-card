@@ -30,7 +30,8 @@ export const GIT_PROFILES = [
       "followers": 6,
       "following": 5,
       "created_at": "2015-07-10T03:05:01Z",
-      "updated_at": "2018-06-06T13:05:10Z"
+      "updated_at": "2018-06-06T13:05:10Z",
+      "languages": ['js', 'react', 'node-js']
   },
   {
     "login": "ellablac",
@@ -63,7 +64,8 @@ export const GIT_PROFILES = [
     "followers": 4,
     "following": 6,
     "created_at": "2015-06-10T15:33:26Z",
-    "updated_at": "2018-05-08T05:00:16Z"
+    "updated_at": "2018-05-08T05:00:16Z",
+    "languages": ['js', 'react', 'node-js']
   },
   {
     "login": "michael-lang",
@@ -96,7 +98,8 @@ export const GIT_PROFILES = [
     "followers": 8,
     "following": 5,
     "created_at": "2010-07-08T03:33:13Z",
-    "updated_at": "2018-03-05T23:49:18Z"
+    "updated_at": "2018-03-05T23:49:18Z",
+    "languages": ['js', 'angular', 'vuejs', 'react', 'node']
   },
   {
     "login": "thesolidmoose",
@@ -129,7 +132,8 @@ export const GIT_PROFILES = [
     "followers": 7,
     "following": 9,
     "created_at": "2017-03-05T18:45:14Z",
-    "updated_at": "2018-05-24T17:15:09Z"
+    "updated_at": "2018-05-24T17:15:09Z",
+    "languages": ['js', 'python']
   },
   {
     "login": "Samibanley",
@@ -162,7 +166,8 @@ export const GIT_PROFILES = [
     "followers": 3,
     "following": 4,
     "created_at": "2017-01-27T23:24:32Z",
-    "updated_at": "2018-05-09T04:58:10Z"
+    "updated_at": "2018-05-09T04:58:10Z",
+    "languages": ['js', 'react', 'node-js']
   },
   {
     "login": "jbburf",
@@ -195,7 +200,8 @@ export const GIT_PROFILES = [
     "followers": 6,
     "following": 4,
     "created_at": "2013-12-16T16:56:32Z",
-    "updated_at": "2018-05-11T16:16:40Z"
+    "updated_at": "2018-05-11T16:16:40Z",
+    "languages": ['js', 'react', 'python']
   },
   {
     "login": "vivianmaxine",
@@ -228,6 +234,7 @@ export const GIT_PROFILES = [
     "followers": 3,
     "following": 1,
     "created_at": "2016-05-26T02:36:00Z",
-    "updated_at": "2018-05-26T00:26:29Z"
+    "updated_at": "2018-05-26T00:26:29Z",
+    "languages": ['js', 'react', 'node-js']
   }
 ]

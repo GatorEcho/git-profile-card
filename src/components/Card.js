@@ -18,7 +18,8 @@ class Card extends Component {
                                    login={user.login}
                                    repos={user.public_repos}
                                    gists={user.public_gists}
-                                   url={user.html_url}/>
+                                   url={user.html_url}
+                                   languages={user.languages}/>
                     </div>
                     </div>
                 )}</div>
