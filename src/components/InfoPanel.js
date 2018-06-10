@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import BioPanel from './BioPanel';
 import GitPanel from './GitPanel';
+import EmailPanel from './EmailPanel';
+import FCCPanel from './FCCPanel';
 
 class InfoPanel extends Component{
     static initialState = () => ({
@@ -23,7 +25,17 @@ renderInfoPanel = (user) => {
                           gists={this.props.gists}
                           gistsURL={'http://gist.github.com/' + this.props.login}
                 />
-            )      
+            )
+        case 'email':
+            return (
+                <EmailPanel login={this.props.login}
+                />
+            )
+        case 'fcc':
+        return (
+            <FCCPanel login={this.props.login}
+            />
+        )      
         default:
             return(
                 <BioPanel bio={this.props.bio}/>
@@ -51,9 +63,11 @@ selectInfoPanel = (info) =>{
                                                                        onTouchStart={(info => this.selectInfoPanel('git'))}
                                                                        /*onMouseLeave={(info => this.selectInfoPanel('bio'))}*/></i></a>
                                 <i className='fas fa-envelope staticIcon col'
-                                onMouseEnter={(info => this.selectInfoPanel('bio'))}
-                                onTouchStart={(info => this.selectInfoPanel('bio'))}></i>
-                                <i className='fab fa-free-code-camp staticIcon col'></i>
+                                onMouseEnter={(info => this.selectInfoPanel('email'))}
+                                onTouchStart={(info => this.selectInfoPanel('email'))}></i>
+                                <i className='fab fa-free-code-camp staticIcon col'
+                                 onMouseEnter={(info => this.selectInfoPanel('fcc'))}
+                                 onTouchStart={(info => this.selectInfoPanel('fcc'))}></i>
                                 <i className='fab fa-twitter staticIcon col'></i>
                                 <i className='fab fa-codepen staticIcon col'></i>
                             </div>

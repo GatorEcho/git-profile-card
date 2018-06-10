@@ -9,7 +9,7 @@ class Card extends Component {
         return(
             
                 <div className='row'>{GIT_PROFILES.map((user, id) => 
-                    <div className='col-md-3'>
+                    <div className='col-md-3' key={user.id}>
                     <div className='card'>
                         <img className='profileImage' src={user.avatar_url} alt='profile' />
                         <UserInfo name={user.name} login={user.login} />
