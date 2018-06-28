@@ -14,6 +14,7 @@ const UserInfo = (props) => {
                     <span className='primaryUserInfo'>{'@' + props.login}</span>
                     <br/>
                     <br/>
+                    
                 </div>
             } </div>
         )

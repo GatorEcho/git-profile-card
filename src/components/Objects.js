@@ -1,3 +1,6 @@
+//This is a placeholder object emulating an api response. The basic template is from the
+//GitHub API.
+
 export const GIT_PROFILES = [
     {
       "login": "GatorEcho",
@@ -31,7 +34,8 @@ export const GIT_PROFILES = [
       "following": 5,
       "created_at": "2015-07-10T03:05:01Z",
       "updated_at": "2018-06-06T13:05:10Z",
-      "languages": ['js', 'react', 'node-js']
+      "languages": ['js', 'react', 'node-js'],
+      "quote": "Lorem ipsum dolor sit amet."
   },
   {
     "login": "ellablac",
@@ -65,7 +69,8 @@ export const GIT_PROFILES = [
     "following": 6,
     "created_at": "2015-06-10T15:33:26Z",
     "updated_at": "2018-05-08T05:00:16Z",
-    "languages": ['js', 'react', 'node-js']
+    "languages": ['js', 'react', 'node-js'],
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "login": "michael-lang",
@@ -99,7 +104,8 @@ export const GIT_PROFILES = [
     "following": 5,
     "created_at": "2010-07-08T03:33:13Z",
     "updated_at": "2018-03-05T23:49:18Z",
-    "languages": ['js', 'angular', 'vuejs', 'react', 'node']
+    "languages": ['js', 'angular', 'vuejs', 'react', 'node-js'],
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "login": "thesolidmoose",
@@ -133,7 +139,8 @@ export const GIT_PROFILES = [
     "following": 9,
     "created_at": "2017-03-05T18:45:14Z",
     "updated_at": "2018-05-24T17:15:09Z",
-    "languages": ['js', 'python']
+    "languages": ['js', 'python'],
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "login": "Samibanley",
@@ -167,7 +174,8 @@ export const GIT_PROFILES = [
     "following": 4,
     "created_at": "2017-01-27T23:24:32Z",
     "updated_at": "2018-05-09T04:58:10Z",
-    "languages": ['js', 'react', 'node-js']
+    "languages": ['js', 'react', 'node-js'],
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "login": "jbburf",
@@ -201,7 +209,8 @@ export const GIT_PROFILES = [
     "following": 4,
     "created_at": "2013-12-16T16:56:32Z",
     "updated_at": "2018-05-11T16:16:40Z",
-    "languages": ['js', 'react', 'python']
+    "languages": ['js', 'react', 'python'],
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "login": "vivianmaxine",
@@ -235,6 +244,7 @@ export const GIT_PROFILES = [
     "following": 1,
     "created_at": "2016-05-26T02:36:00Z",
     "updated_at": "2018-05-26T00:26:29Z",
-    "languages": ['js', 'react', 'node-js']
+    "languages": ['js', 'react', 'node-js'],
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }
 ]

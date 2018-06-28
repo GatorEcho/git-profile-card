@@ -4,6 +4,10 @@ import GitPanel from './GitPanel';
 import CodePanel from './CodePanel';
 import FCCPanel from './FCCPanel';
 
+//Component to display different information based on the selected icon at the bottom.
+//Also renders the bottom icons.
+//This component is the only one with state, which tells it which type of info to render.
+
 class InfoPanel extends Component{
     static initialState = () => ({
         infoPanel: 'bio',
@@ -12,10 +16,13 @@ class InfoPanel extends Component{
 state = InfoPanel.initialState();
 
 renderInfoPanel = (user) => {
+
+//Returns a different component depending on which icon is selected.
+
     switch(this.state.infoPanel){
         case 'bio':
         return (
-            <BioPanel bio={this.props.bio}
+            <BioPanel quote={this.props.quote}
             />
         )
         case 'git':
@@ -38,7 +45,7 @@ renderInfoPanel = (user) => {
         )      
         default:
             return(
-                <BioPanel bio={this.props.bio}/>
+                <BioPanel quote={this.props.quote}/>
             )
     }
 }
@@ -55,21 +62,23 @@ selectInfoPanel = (info) =>{
         
         return(
             <div>
-            {this.renderInfoPanel()}
-            <div className='container-fluid'>
+            {this.renderInfoPanel()} {/* Renders the top portion of the InfoPanel based on state. */}
+            <div className='container staticIconContainer'>{/*Renders the bottom static icons */}
                             <div className='row'>
-                                <a  href={this.props.url} target="_blank"><i className='fab fa-git staticIcon col'
-                                                                       onMouseEnter={(info => this.selectInfoPanel('git'))}
-                                                                       onTouchStart={(info => this.selectInfoPanel('git'))}
-                                                                       /*onMouseLeave={(info => this.selectInfoPanel('bio'))}*/></i></a>
+                                <i className='fab fa-git staticIcon col'
+                                onMouseEnter={(() => this.selectInfoPanel('git'))}
+                                onTouchStart={(() => this.selectInfoPanel('git'))}></i> 
+
+                                <i className='fas fa-quote-right staticIcon col'
+                                onMouseEnter={(() => this.selectInfoPanel('bio'))}
+                                onTouchStart={(() => this.selectInfoPanel('bio'))}></i>
+
                                 <i className='fas fa-code staticIcon col'
-                                onMouseEnter={(info => this.selectInfoPanel('code'))}
-                                onTouchStart={(info => this.selectInfoPanel('code'))}></i>
-                                <i className='fab fa-free-code-camp staticIcon col'
-                                 onMouseEnter={(info => this.selectInfoPanel('fcc'))}
-                                 onTouchStart={(info => this.selectInfoPanel('fcc'))}></i>
-                                <i className='fab fa-twitter staticIcon col'></i>
-                                <i className='fab fa-codepen staticIcon col'></i>
+                                onMouseEnter={(() => this.selectInfoPanel('code'))}
+                                onTouchStart={(() => this.selectInfoPanel('code'))}></i>
+
+                                {/* <i className='fab fa-twitter staticIcon col'></i>
+                                <i className='fab fa-codepen staticIcon col'></i> */}
                             </div>
                             </div>
                             </div>
